@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>U45 ESPORTS - Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('images/common/esport-main-slider-1.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+        }
+        .register-container {
+            position: relative;
+            z-index: 2;
+            max-width: 500px;
+            width: 90%;
+            padding: 2rem;
+            background: rgba(26, 26, 26, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        .register-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .register-header h1 {
+            color: #ffd700;
+            font-size: 2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+        .instructions {
+            color: #ffd700;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            color: #fff;
+            padding: 0.8rem 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+        .form-control option {
+            color: #000;
+            background: #fff;
+        }
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+            color: #fff;
+            outline: none;
+        }
+        .form-group {
+            position: relative;
+        }
+        .btn-register {
+            background: linear-gradient(45deg, #ffd700, #ffa500);
+            border: none;
+            color: #000;
+            font-weight: 700;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .back-to-home {
+            color: #ffd700;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .success-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .success-message {
+            background: rgba(26, 26, 26, 0.95);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #ffd700;
+            max-width: 400px;
+            width: 90%;
+        }
+        .success-message h2 {
+            color: #ffd700;
+            margin-bottom: 1rem;
+        }
+        .success-message p {
+            margin-bottom: 1.5rem;
+        }
+        .success-message .btn {
+            background: #ffd700;
+            color: #000;
+            padding: 0.5rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-header">
+            <h1>Join U45 ESPORTS</h1>
+            <p class="instructions">Fill out the form below to register for the competition</p>
+        </div>
+        <form id="registrationForm">
+            <div class="form-group">
+                <p class="instructions">Enter your full name</p>
+                <input type="text" class="form-control" id="username" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <p class="instructions">Enter your email address</p>
+                <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <p class="instructions">Enter your in-game username (the name you use in League of Legends)</p>
+                <input type="text" class="form-control" id="gameUsername" placeholder="In-Game Username" required>
+            </div>
+            <div class="form-group">
+                <p class="instructions">Select your preferred position in the game</p>
+                <select class="form-control" id="position" required>
+                    <option value="">Select Position</option>
+                    <option value="Top">Top Lane</option>
+                    <option value="Jungle">Jungle</option>
+                    <option value="Mid">Mid Lane</option>
+                    <option value="ADC">Attack Damage Carry (ADC)</option>
+                    <option value="Support">Support</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p class="instructions">Choose whether to join an existing team or create a new one</p>
+                <select class="form-control" id="teamOption" required>
+                    <option value="">Select Team Option</option>
+                    <option value="existing">Join Existing Team</option>
+                    <option value="new">Create New Team</option>
+                </select>
+            </div>
+            <div class="form-group" id="teamSelect" style="display: none;">
+                <p class="instructions">Select your team from the list</p>
+                <select class="form-control" id="existingTeam">
+                    <option value="">Select Team</option>
+                </select>
+            </div>
+            <div class="form-group" id="newTeam" style="display: none;">
+                <p class="instructions">Enter your new team name</p>
+                <input type="text" class="form-control" id="teamName" placeholder="New Team Name">
+            </div>
+            <button type="submit" class="btn btn-register">Register Now</button>
+            <a href="landing.html" class="back-to-home">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </form>
+    </div>
+
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-message">
+            <h2>Registration Successful!</h2>
+            <p>Welcome to U45 ESPORTS! You can now join a team and start your gaming journey.</p>
+            <a href="landing.html" class="btn">Go to Home</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script>
+        const supabaseUrl = 'https://mfhdxbynauxatkcmexov.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1maGR4YnluYXV4YXRrY21leG92Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM5NzQ2MDgsImV4cCI6MjA1OTU1MDYwOH0.5JZZX_8PPksF-PoyCP8OC_eaWTcIsIYMx1dLIx2-piY';
+        const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+        document.addEventListener('DOMContentLoaded', async function() {
+            const teamOption = document.getElementById('teamOption');
+            const teamSelect = document.getElementById('teamSelect');
+            const newTeam = document.getElementById('newTeam');
+            const existingTeamSelect = document.getElementById('existingTeam');
+
+            // Fetch existing teams
+            try {
+                const { data: teams, error } = await supabase
+                    .from('teams')
+                    .select('id, name')
+                    .order('name', { ascending: true });
+
+                if (error) throw error;
+
+                teams.forEach(team => {
+                    const option = document.createElement('option');
+                    option.value = team.id;
+                    option.textContent = team.name;
+                    existingTeamSelect.appendChild(option);
+                });
+            } catch (error) {
+                console.error('Error fetching teams:', error.message);
+            }
+
+            // Handle team option selection
+            teamOption.addEventListener('change', function() {
+                if (this.value === 'existing') {
+                    teamSelect.style.display = 'block';
+                    newTeam.style.display = 'none';
+                    existingTeamSelect.setAttribute('required', 'required');
+                    document.getElementById('teamName').removeAttribute('required');
+                } else if (this.value === 'new') {
+                    teamSelect.style.display = 'none';
+                    newTeam.style.display = 'block';
+                    document.getElementById('teamName').setAttribute('required', 'required');
+                    existingTeamSelect.removeAttribute('required');
+                } else {
+                    teamSelect.style.display = 'none';
+                    newTeam.style.display = 'none';
+                    existingTeamSelect.removeAttribute('required');
+                    document.getElementById('teamName').removeAttribute('required');
+                }
+            });
+
+            // Handle form submission
+            document.getElementById('registrationForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const username = document.getElementById('username').value;
+                const email = document.getElementById('email').value;
+                const gameUsername = document.getElementById('gameUsername').value;
+                const position = document.getElementById('position').value;
+                const teamOptionValue = teamOption.value;
+                const existingTeam = existingTeamSelect.value;
+                const teamName = document.getElementById('teamName').value;
+
+                try {
+                    // Step 1: Handle team
+                    let teamId;
+                    if (teamOptionValue === 'existing') {
+                        teamId = existingTeam;
+                    } else if (teamOptionValue === 'new') {
+                        const { data: teamData, error: teamError } = await supabase
+                            .from('teams')
+                            .insert([{
+                                name: teamName,
+                                created_at: new Date().toISOString()
+                            }])
+                            .select('id')
+                            .single();
+
+                        if (teamError) throw teamError;
+                        teamId = teamData.id;
+                    }
+
+                    // Step 2: Create player entry
+                    const { error: playerError } = await supabase
+                        .from('players')
+                        .insert([{
+                            team_id: teamId,
+                            game_username: gameUsername,
+                            position: position,
+                            stats: {},
+                            created_at: new Date().toISOString(),
+                            updated_at: new Date().toISOString()
+                        }]);
+
+                    if (playerError) throw playerError;
+
+                    // Show success message
+                    document.getElementById('successOverlay').style.display = 'flex';
+                } catch (error) {
+                    console.error('Registration error:', error);
+                    alert('Registration failed: ' + error.message);
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

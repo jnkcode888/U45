@@ -1,0 +1,2487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com https://www.youtube.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://fonts.googleapis.com; img-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https://www.youtube.com; connect-src 'self' https:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.h-team.torbara.com data:;">
+    <title>U45 E-SPORTS</title>
+    <!-- Update font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;800;900&display=swap" rel="stylesheet">
+    <!-- Update Font Awesome loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="dev-assets/preloader-default.css" rel="stylesheet" type="text/css" />
+    <link href="dev-assets/demo-switcher.css" rel="stylesheet" type="text/css" />
+    <style>
+        /* Social Links Styles */
+        .esport-social-links {
+            background: #1a1a1a;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .social-links-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .social-link {
+            color: #fff;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .social-link:hover {
+            color: #ffd700;
+            background: rgba(255, 215, 0, 0.2);
+            transform: translateY(-3px);
+        }
+        @media (max-width: 768px) {
+            .social-links {
+                gap: 15px;
+            }
+            .social-link {
+                width: 35px;
+                height: 35px;
+                font-size: 18px;
+            }
+        }
+        .navbar-toggle {
+            display: block;
+            position: relative;
+            float: right;
+            padding: 9px 10px;
+            margin-top: 8px;
+            margin-right: 15px;
+            margin-bottom: 8px;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .navbar-toggle:focus {
+            outline: 0;
+        }
+        .navbar-toggle .icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: #fff;
+            margin: 4px 0;
+        }
+        @media (min-width: 768px) {
+            .navbar-toggle {
+                display: none;
+            }
+        }
+        .navbar-collapse {
+            display: none;
+        }
+        .navbar-collapse.show {
+            display: block;
+        }
+        @media (max-width: 767px) {
+            .navbar-collapse {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1a1a1a;
+                z-index: 1000;
+                padding: 15px;
+            }
+            .navbar-collapse.show {
+                display: block;
+            }
+            .navbar-toggle {
+                display: none;
+            }
+            .mobile-register-btn {
+                display: block;
+                background: #ffd700;
+                color: #000;
+                padding: 8px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: bold;
+                margin: 8px 15px;
+                float: right;
+                margin-top: 40px;
+            }
+            .mobile-register-btn:hover {
+                background: #ffa500;
+                color: #000;
+            }
+        }
+        @media (min-width: 768px) {
+            .mobile-register-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="esport-black">
+    
+    <div class="preloader-wrapper" id="preloader">
+    <div class="motion-line dark-big"></div>
+    <div class="motion-line yellow-big"></div>
+    <div class="motion-line dark-small"></div>
+    <div class="motion-line yellow-normal"></div>
+    <div class="motion-line yellow-small1"></div>
+    <div class="motion-line yellow-small2"></div>
+</div>
+    
+    <!--ESPORT CHAMPIONSHIP HEADER BEGIN-->
+<div class="esport-cmapionship-header">  
+    <div class="container">
+        <div class="wrapper">
+            
+            <a class="logo" href="landing.html">
+                <img src="images/common/esport-champ-logo.png" alt="logo">
+            </a>
+            <div class="navbar-header">
+                <a href="register.html" class="mobile-register-btn">Register</a>
+            </div>
+            <div class="clear-header">
+                <div id="landing-header" class="navbar-collapse collapse">
+                    <ul class="list">
+                        <li class="active">
+                            <a href="landing.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="team-landing.html">Teams</a>
+                        </li>
+                        <li>
+                            <a href="news.html">News</a>
+                        </li>
+                        <li>
+                            <a href="store.html">Store</a>
+                        </li>
+                        <li>
+                            <a href="2championship.html">Championships</a>
+                        </li>
+                        <li>
+                            <a href="register.html" class="register-btn">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP HEADER END-->
+    
+    <div class="esport_champoinship_main_slider">
+    <div class="main-slide-post">
+        <div id="horizontal-wrapper">
+            <div class="wrapper">
+                <img src="images/common/esport-main-slider-1.jpg" alt='slider-image'>
+                <div>
+                    <span>08 june 2025</span>
+                    <span class="text">U45 ESPORTS CHAMPIONSHIP</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img src="images/common/esport-main-slider-2.jpg" alt='slider-image'>
+                <div>
+                    <span>08 JULY 2025</span>
+                    <span class="text">Player Spotlight on U45 Caps: Rift Rivals Edition</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img src="images/common/esport-main-slider-3.jpg" alt='slider-image'>
+                <div>
+                    <span>19 sep 2025</span>
+                    <span class="text">Player Spotlight on U45 Caps: Rift Rivals Edition</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img src="images/common/esport-main-slider-1.jpg" alt='slider-image'>
+                <div>
+                    <span>19 sep 2025</span>
+                    <span class="text">Player Spotlight on U45 Caps: Rift Rivals Edition</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img src="images/common/esport-main-slider-2.jpg" alt='slider-image'>
+                <div>
+                    <span>19 sep 2025</span>
+                    <span class="text">Player Spotlight on U45 Caps: Rift Rivals Edition</span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img src="images/common/esport-main-slider-3.jpg" alt='slider-image'>
+                <div>
+                    <span>19 sep 2025</span>
+                    <span class="text">Player Spotlight on U45 Caps: Rift Rivals Edition</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="older-slide-posts">
+        <div id="wrapper">
+            <div class="item_vertical" data-id="0">
+                <div class="wrapper">
+                    <img src="images/common/esport-main-slider-1.jpg" alt='slider-image'>
+                    <div>
+                        <span>19 sep 2025</span>
+                        <span class="text">Player Spotlight on U45 Caps: Rift Rivals Edition</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item_vertical" data-id="1">
+                <div class="wrapper">
+                    <img src="images/common/esport-main-slider-2.jpg" alt='slider-image'>
+                    <div>
+                        <span>19 sep 2025</span>
+                        <span class="text">Player Spotlight on FNC Caps: Rift Rivals Edition</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item_vertical" data-id="2">
+                <div class="wrapper">
+                    <img src="images/common/esport-main-slider-3.jpg" alt='slider-image'>
+                    <div>
+                        <span>19 sep 2025</span>
+                        <span class="text">Player Spotlight on FNC Caps: Rift Rivals Edition</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item_vertical" data-id="3">
+                <div class="wrapper">
+                    <img src="images/common/esport-main-slider-1.jpg" alt='slider-image'>
+                    <div>
+                        <span>19 sep 2025</span>
+                        <span class="text">Player Spotlight on FNC Caps: Rift Rivals Edition</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item_vertical" data-id="4">
+                <div class="wrapper">
+                    <img src="images/common/esport-main-slider-2.jpg" alt='slider-image'>
+                    <div>
+                        <span>19 sep 2025</span>
+                        <span class="text">Player Spotlight on FNC Caps: Rift Rivals Edition</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item_vertical" data-id="5">
+                <div class="wrapper">
+                    <img src="images/common/esport-main-slider-3.jpg" alt='slider-image'>
+                    <div>
+                        <span>19 sep 2025</span>
+                        <span class="text">Player Spotlight on FNC Caps: Rift Rivals Edition</span>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="arrows-wrapper">
+        <a class="arrow-left" href="#">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </a>
+        <a class="arrow-right" href="#">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+    </div>
+    <span class="timeline">
+        <span></span>  
+    </span>
+</div>
+
+<!--SOCIAL LINKS BEGIN-->
+<section class="esport-social-links">
+    <div class="container">
+        <div class="social-links-wrap">
+            <ul class="social-links">
+                <li><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--SOCIAL LINKS END-->
+    
+    <!--ESPORT CHAMPIONSHIP SPONSORS BEGIN-->
+<div class="esport-championship-sponsors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 sponsors">
+                <span>Soccer team</span> 
+                <span>sponsors</span>
+            </div>
+            <div class="col-md-3 col-sm-4 text-center">
+                <img src="images/common/sponsor-img.png" alt="sponsor-image">
+            </div>
+            <div class="col-md-3 col-sm-4  text-center">
+                <img src="images/common/sponsor-img1.png" alt="sponsor-image">
+            </div>
+            <div class="col-md-3 col-sm-4  text-center">
+                <img src="images/common/esport-sponsot-white.png" alt="sponsor-image">
+            </div>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP SPONSORS END-->
+    
+    <div id="matches" class="esport_champoinship_shedule_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <!--ESPORT CHAMPIONSHIP STANDINGS BEGIN -->
+<div class="esport-championship-standings">
+    <div class="buttons-wrapper">
+        <a href ="#" class="arrow left"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+        <a href ="#" class="arrow right"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+        <span>
+            standing:
+            <span class="league">Champions league</span>            
+        </span>
+    </div>
+   <div class="mySlides fade-standings">
+        <span class="league_name">Champions league</span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">bears</span>
+            <span class="number">21</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">bears</span>
+            <span class="number">21</span>
+        </a>
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">bears</span>
+            <span class="number">21</span>
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                4
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">bears</span>
+            <span class="number">21</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                5
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">bears</span>
+            <span class="number">21</span>
+        </a>
+    </div>
+     <div class="mySlides fade-standings">
+        <span class="league_name">Champions </span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">bears</span>
+            <span class="number">21</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">bears</span>
+            <span class="number">18</span>
+        </a>
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">bears</span>
+            <span class="number">15</span>
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                4
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">bears</span>
+            <span class="number">15</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                5
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">bears</span>
+            <span class="number">15</span>
+        </a>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP STANDINGS END -->
+                </div>
+                <div class="col-md-7">
+                    <h5 class="esport-landing-header">latest matches</h5>
+                    <!--ESPORT CHAMPIONSHIP LATEST MATCHES BEGIN-->
+<div class="esport-championship-latest-matches">
+    <a href="#">
+        <img src="images/common/esport-champ-late-match.jpg" alt="background">
+        <span>Qualification - round 1</span>
+        <div>
+            <div class="team left">
+                <span>
+                    <img src="images/common/team-logo2.png" alt="team-logo">
+                </span>
+                <span class="team-name">internacional</span>
+            </div>
+            <div class="score">
+                <span>3:2</span>
+            </div>
+            <div class="team right">
+                <span class="image">
+                    <img src="images/common/team-logo2.png" alt="team-logo">
+                </span>
+                <span class="team-name">internacional</span>
+            </div>
+        </div>
+        <span>full time</span>
+    </a>
+    <a href="#">
+        <img src="images/common/esport-champ-late-match.jpg" alt="background">
+        <span>Qualification - round 1</span>
+        <div>
+            <div class="team left">
+                <span>
+                    <img src="images/common/team-logo2.png" alt="team-logo">
+                </span>
+                <span class="team-name">internacional</span>
+            </div>
+            <div class="score">
+                <span>3:2</span>
+            </div>
+            <div class="team right">
+                <span class="image">
+                    <img src="images/common/team-logo2.png" alt="team-logo">
+                </span>
+                <span class="team-name">internacional</span>
+            </div>
+        </div>
+        <span>full time</span>
+    </a>
+</div>
+<!--ESPORT CHAMPIONSHIP LATEST MATCHES END-->
+                </div>
+            </div>
+        </div>
+        <!--ESPORT CHAMPIONSHIP PARTICIPANTS BEGIN-->
+<div class="esport_championship_participants">
+    <div class="container">
+        <div class="row no-guters">
+            <div class="col-md-12">
+                <h5 class="esport-landing-header">latest matches</h5>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img src="images/common/esport-participants-background.jpg" class="background-team" alt="background">
+                    <img src="images/common/team-logo4.png" alt="team-logo">
+                    <span>Boars team</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img src="images/common/esport-participants-background.jpg" class="background-team" alt="background">
+                    <img src="images/common/team-logo4.png" alt="team-logo">
+                    <span>Boars team</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img src="images/common/esport-participants-background.jpg" class="background-team" alt="background">
+                    <img src="images/common/team-logo4.png" alt="team-logo">
+                    <span>Boars team</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img src="images/common/esport-participants-background.jpg" class="background-team" alt="background">
+                    <img src="images/common/team-logo4.png" alt="team-logo">
+                    <span>Boars team</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img src="images/common/esport-participants-background.jpg" class="background-team" alt="background">
+                    <img src="images/common/team-logo4.png" alt="team-logo">
+                    <span>Boars team</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img src="images/common/esport-participants-background.jpg" class="background-team" alt="background">
+                    <img src="images/common/team-logo4.png" alt="team-logo">
+                    <span>Boars team</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img src="images/common/esport-participants-background.jpg" class="background-team" alt="background">
+                    <img src="images/common/team-logo4.png" alt="team-logo">
+                    <span>Boars team</span>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="#">
+                    <img src="images/common/esport-participants-background.jpg" class="background-team" alt="background">
+                    <img src="images/common/team-logo4.png" alt="team-logo">
+                    <span>Boars team</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP PARTICIPANTS END-->
+    </div>
+    
+    <!-- ESPORT CHAMPIONSHIP ABOUT TROPHEY BEGIN -->
+<div id="about" class="esport-championship-about-trophey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h5 class="esport-landing-header">About Trophy</h5>
+                <div class="trophey-wrap">
+                    <span>
+                        <img src="images/common/The-International-Dota-2-Battle-Pass.png" alt="trophey">
+                    </span>
+                    <span>
+                        <span class="name">U45 CAP</span>
+                        <span class="date">2025</span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h5 class="esport-landing-header">About Event</h5>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="wrap">
+                            <span class="head">prize pool</span>
+                            <span class="info">20 985 528KSH</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="wrap">
+                            <span class="head">seats </span>
+                            <span class="info">9 850</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="wrap">
+                            <span class="head">Date of event</span>
+                            <span class="info">28-30 july</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="wrap">
+                            <span class="head">Place of event</span>
+                            <span class="info">NAIROBI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ESPORT CHAMPIONSHIP ABOUT TROPHEY END -->
+    
+    <div class="esport_champoinship_ofthepast_section">
+    
+        <!--TIMLINE TABS BEGIN-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="esport-landing-header">Champions of the past</h5>
+        </div>
+        <div class="col-md-12">
+            <ul class="esport-championship-timline-tabs">
+                <li><a href="team_2012.html">2025</a></li>
+                <li><a href="team_2013.html">2025</a></li>
+                <li><a href="team_2014.html">2025</a></li>
+                <li class="active"><a href="team_2015.html">2025</a></li>
+                <li><a href="team_2025.html">2025</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--TIMLINE TABS END-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <!--ESPORT CHAMPIONSHIP WIN TEAM BEGIN-->
+<div class="esport-championship-win-team start team_2025">
+    <a href="#">
+        <div class="image-wrapper">
+            <img src="images/common/team-logo1.png" alt="team-logo">
+        </div>
+        <div class="text">
+            <span class="name">team eagles</span>
+            <span class="status">champion</span>
+        </div>
+    </a>
+</div>
+<div class="esport-championship-win-team start team_2015">
+    <a href="#">
+        <div class="image-wrapper">
+            <img src="images/common/team-logo1.png" alt="team-logo">
+        </div>
+        <div class="text">
+            <span class="name">team rhinos</span>
+            <span class="status">champion</span>
+        </div>
+    </a>
+</div>
+<div class="esport-championship-win-team start team_2014">
+    <a href="#">
+        <div class="image-wrapper">
+            <img src="images/common/team-logo1.png" alt="team-logo">
+        </div>
+        <div class="text">
+            <span class="name">team wolves</span>
+            <span class="status">champion</span>
+        </div>
+    </a>
+</div>
+<div class="esport-championship-win-team start team_2013">
+    <a href="#">
+        <div class="image-wrapper">
+            <img src="images/common/team-logo1.png" alt="team-logo">
+        </div>
+        <div class="text">
+            <span class="name">team dolphins</span>
+            <span class="status">champion</span>
+        </div>
+    </a>
+</div>
+<div class="esport-championship-win-team start team_2012">
+    <a href="#">
+        <div class="image-wrapper">
+            <img src="images/common/team-logo1.png" alt="team-logo">
+        </div>
+        <div class="text">
+            <span class="name">team eagles</span>
+            <span class="status">champion</span>
+        </div>
+    </a>
+</div>
+<!--ESPORT CHAMPIONSHIP WIN TEAM END-->
+                </div>
+                <div class="col-md-5">
+                    <!--ESPORT CHAMPIONSHIP PLACES BEGIN-->
+<div class="esport-championship-places start team_2025">
+    <a href="#">
+        <img class="background" src="images/common/esport_championship_second_place_background.jpg" alt="background">  
+        <img  class="team-logo" src="images/common/team-logo4.png" alt="team-logo">
+        <span>
+            <span class="name">team rhinos</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+    <a href="#">
+        <img class="background" src="images/common/esport_championship_third_place_background.jpg" alt="background"> 
+        <img class="team-logo" src="images/common/team-logo4.png" alt="team-logo">
+        <span>
+            <span class="name">team rhinos</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+</div>
+<div class="esport-championship-places start team_2015">
+    <a href="#">
+        <img class="background" src="images/common/esport_championship_second_place_background.jpg" alt="background">  
+        <img  class="team-logo" src="images/common/team-logo4.png" alt="team-logo">
+        <span>
+            <span class="name">team rhinos</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+    <a href="#">
+        <img class="background" src="images/common/esport_championship_third_place_background.jpg" alt="background"> 
+        <img class="team-logo" src="images/common/team-logo4.png" alt="team-logo">
+        <span>
+            <span class="name">team rhinos</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+</div>
+<div class="esport-championship-places start team_2014">
+    <a href="#">
+        <img class="background" src="images/common/esport_championship_second_place_background.jpg" alt="background">  
+        <img  class="team-logo" src="images/common/team-logo4.png" alt="team-logo">
+        <span>
+            <span class="name">team rhinos</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+    <a href="#">
+        <img class="background" src="images/common/esport_championship_third_place_background.jpg" alt="background"> 
+        <img class="team-logo" src="images/common/team-logo4.png" alt="team-logo">
+        <span>
+            <span class="name">team rhinos</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+</div>
+<div class="esport-championship-places start team_2013">
+    <a href="#">
+        <img class="background" src="images/common/esport_championship_second_place_background.jpg" alt="background">  
+        <img  class="team-logo" src="images/common/team-logo4.png" alt="team-logo">
+        <span>
+            <span class="name">team rhinos</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+    <a href="#">
+        <img class="background" src="images/common/esport_championship_third_place_background.jpg" alt="background"> 
+        <img class="team-logo" src="images/common/team-logo4.png" alt="team-logo">
+        <span>
+            <span class="name">team rhinos</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+</div>
+<div class="esport-championship-places start team_2012">
+    <a href="#">
+        <img class="background" src="images/common/esport_championship_second_place_background.jpg" alt="background">  
+        <img  class="team-logo" src="images/common/team-logo4.png" alt="team-logo">
+        <span>
+            <span class="name">team rhinos</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+    <a href="#">
+        <img class="background" src="images/common/esport_championship_third_place_background.jpg" alt="background"> 
+        <img class="team-logo" src="images/common/team-logo4.png" alt="team-logo">
+        <span>
+            <span class="name">team rhinos</span>
+            <span class="place">second place</span>
+        </span>
+    </a>
+</div>
+<!--ESPORT CHAMPIONSHIP PLACES END-->
+                </div>
+            </div>
+        </div>
+
+        <!--ESPORT CHAMPIONSHIP PLAYERS BEGIN-->
+<div id="team" class="esport-championship-players">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="esport-landing-header">players</h5>
+                <ul class="esport-players">
+                    <li class="active">
+                        <a data-toggle="tab" href="#panters">panters</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#bears">bears</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#horses">horses</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#octopus">octopus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="panters" class="tab-pane fade in active"> 
+                <div class="wrap"> 
+                    <div class="width players-wrapper">
+                        <a href="#" data-id="0">
+                            <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                            <span class="name">
+                                U45 DREAM TEAM 
+                            </span>
+                            <span class="info-bord">
+                                <span class="name">U45 DREAM TEAM </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" data-id="0">
+                            <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                            <span class="name">
+                                U45 DREAM TEAM 
+                            </span>
+                            <span class="info-bord">
+                                <span class="name">U45 DREAM TEAM</span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" data-id="0">
+                            <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                            <span class="name">
+                                U45 DREAM TEAM 
+                            </span>
+                            <span class="info-bord">
+                                <span class="name">U45 DREAM TEAM </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <a href="#" data-id="0">
+                            <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                            <span class="name">
+                                U45 DREAM TEAM 
+                            </span>
+                            <span class="info-bord">
+                                <span class="name">U45 DREAM TEAM </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>    
+                        <a href="#" data-id="0">
+                            <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                            <span class="name">
+                                U45 DREAM TEAM 
+                            </span>
+                            <span class="info-bord">
+                                <span class="name">U45 DREAM TEAM </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                                <span class="progress-item">
+                                    <span class="progress-line">
+                                        <span class="bar"></span>
+                                    </span>
+                                    <span class="bar-label">
+                                        <span class="achievement">played</span>
+                                        <span class="score">23</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>     
+                    </div>
+                </div>
+            </div>
+            <div id="bears" class="tab-pane fade"> 
+            <div class="wrap">
+                <div class="width players-wrapper">
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>    
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>     
+                </div>
+            </div>
+        </div>
+        <div id="horses" class="tab-pane fade"> 
+            <div class="wrap">
+                <div class="width players-wrapper">
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>    
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>     
+                </div>
+            </div>
+        </div>
+        <div id="octopus" class="tab-pane fade"> 
+            <div class="wrap">
+                <div class="width players-wrapper">
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>    
+                    <a href="#" data-id="0">
+                        <img class="player-img" alt="player-img" src="images/common/esport-players.jpg">
+                        <span class="name">
+                            U45 DREAM TEAM 
+                        </span>
+                        <span class="info-bord">
+                            <span class="name">U45 DREAM TEAM </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                            <span class="progress-item">
+                                <span class="progress-line">
+                                    <span class="bar"></span>
+                                </span>
+                                <span class="bar-label">
+                                    <span class="achievement">played</span>
+                                    <span class="score">23</span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>     
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP PLAYERS END-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5 class="esport-landing-header">English Commentatos</h5>
+                    <!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+<div class="esport-championship-comm-wrap">
+    <div class="item">
+        <div class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">PLAYERS NAME </div>
+            <div class="country"><img src="images/common/en-flag.png" alt="flag">KENYA</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">
+        <div class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">PLAYERS NAME </div>
+            <div class="country"><img src="images/common/en-flag.png" alt="flag">KENYA</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="esport-landing-header">English Commentatos</h5>
+                    <!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+<div class="esport-championship-comm-wrap">
+    <div class="item">
+        <div class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">PLAYERS NAME </div>
+            <div class="country"><img src="images/common/en-flag.png" alt="flag">KENYA </div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">
+        <div class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">PLAYERS NAME </div>
+            <div class="country"><img src="images/common/en-flag.png" alt="flag">KENYA</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="esport-landing-header">English Commentatos</h5>
+                    <!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+<div class="esport-championship-comm-wrap">
+    <div class="item">
+        <div class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">PLAYERS NAME </div>
+            <div class="country"><img src="images/common/en-flag.png" alt="flag">KENYA</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="item">
+        <div class="avatar"><img src="images/common/member-avatar.jpg" alt="member-avatar"></div>
+        <div class="info">
+            <div class="name">PLAYERS NAME </div>
+            <div class="country"><img src="images/common/en-flag.png" alt="flag">KENYA</div>
+        </div>
+        <div class="hover-wrapper">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP COMENTATORS BEGIN-->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!--ESPORT CHAMPIONSHIP TWITTER SLIDER BEGIN-->
+<div id="twitter-slider" class="esport_championship_twitter_slider"  data-ride="carousel">
+    <!--<div class="wrapper-width">-->
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wrap">
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <div class="text">
+                                The obvious objective of #esport video games is to entertain people by surprising them with new experiences. Read more at U45 CLUB.com
+                            </div>
+                            <div class="copyright">@PiratesTeam / September 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wrap">
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <div class="text">
+                                The obvious objective of <a href="#">#esport</a>video games is to entertain people by surprising them with. Read more <a href="#"> U45 CLUB.com</a>
+                            </div>
+                            <div class="copyright">@PiratesTeam / September 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <!--</div>-->
+    <!-- Controls -->
+    <a class="nav-arrow left-arrow" href="#twitter-slider" role="button" data-slide="prev">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        <span class="sr-only"></span>
+    </a>
+    <a class="nav-arrow right-arrow" href="#twitter-slider" role="button" data-slide="next">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+        <span class="sr-only"></span>
+    </a>
+</div>
+<!--ESPORT CHAMPIONSHIP TWITTER SLIDER END-->
+    
+    <!--SPORT CHAMPIONSHIP LATEST VIDEOS BEGIN--> 
+<div class="esport-championship-latest-videos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="esport-landing-header">latest<span class='youtube'>youtube</span>videos</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="ifram-wrapper">
+                    <iframe src="https://www.youtube.com/embed/xkUTkfA0y3k" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-md-4 video-wrapper">
+                <div class="wrapper">
+                    <div class="width">
+                        <div class="news-wrapper">
+                            <img src="images/common/esport_championhip_videos_1.jpg" alt="news-img">
+                            <iframe src="https://www.youtube.com/embed/R0QsO2uh-D4" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen
+                                    loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin">
+                            </iframe>
+                            <div class="news-border">
+                                <span class="date">5 september</span>
+                                <span class="name">Best Video Game Cinematic Trailers Of 2025</span>
+                            </div>
+                        </div>
+                        <div class="news-wrapper">
+                            <img src="images/common/esport_championhip_videos_2.jpg" alt="news-img">
+                            <iframe src="https://www.youtube.com/embed/J6xZyd-86t8" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen
+                                    loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin">
+                            </iframe>
+                            <div class="news-border">
+                                <span class="date">4 september</span>
+                                <span class="name">Top 5: Most Epic Video Game Cinematic trailers </span>
+                            </div>
+                        </div>
+                        <div class="news-wrapper">
+                            <img src="images/common/esport_championhip_videos_1.jpg" alt="news-img">
+                            <iframe src="https://www.youtube.com/embed/mskPDjtZacs" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen
+                                    loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin">
+                            </iframe>
+                            <div class="news-border">
+                                <span class="date">1 september</span>
+                                <span class="name">Top 20 NEW Upcoming SURVIVAL GAMES of 2025</span>
+                            </div>
+                        </div>
+                        <div class="news-wrapper">
+                            <img src="images/common/esport_championhip_videos_2.jpg" alt="news-img">
+                            <iframe src="https://www.youtube.com/embed/EmQxsBz27XY" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen
+                                    loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin">
+                            </iframe>
+                            <div class="news-border">
+                                <span class="date">28 august</span>
+                                <span class="name">TOP 25 BEST Upcoming Games of 2025</span>
+                            </div>
+                        </div>                         
+                        <div class="news-wrapper">
+                            <img src="images/common/esport_championhip_videos_1.jpg" alt="news-img">
+                            <iframe src="https://www.youtube.com/embed/k4MYqFw2KYg" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen
+                                    loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin">
+                            </iframe>
+                            <div class="news-border">
+                                <span class="date">25 august</span>
+                                <span class="name">Top 10 Video Game Cinematic Trailers 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+</div>
+<!--SPORT CHAMPIONSHIP LATEST VIDEOS END--> 
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="esport-landing-header">Subscribe to newsletter</h5>
+            </div>
+            <div class="col-md-12">
+                <div class="esport-championship-subscribe">   
+    <form>
+        <input type="text" name="text" placeholder="Type your e-mail here">
+        <button>subscribe</button>
+    </form>
+</div> 
+            </div>
+        </div>
+    </div>    
+    
+    <div class="esport-championship-store-section">
+    
+        <!--ESPORT CHAMPIONSHIP STORE CONTAINER BEGIN-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="esport-landing-header">fan store</h5>
+        </div>	
+        <div class="col-md-12">
+            <ul class="esport-championship-store-filter">
+                <li class="active"><a data-toggle="tab" href="#new">New</a></li>
+                <li><a data-toggle="tab" href="#hotdeals">hot deals</a></li>
+                <li><a data-toggle="tab" href="#officialapparel">Official apparel</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP STORE CONTAINER BEGIN-->
+        
+        <!--ESPORT CHAMPIONSHIP STORE BEGIN-->
+<div class="esport-championship-store">
+    <div class="container">
+        <div class="tab-content">
+            <div id="new" class="tab-pane fade in active">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <span class="store-badge hot">hot</span>
+                                    <img src="images/common/esport-champ-store-1.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's T-Shirt Elite</span>
+                                    <span class="price">3000 KSH</span>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <span class="store-badge new">new</span>
+                                    <img src="images/common/esport-champ-store-2.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's Long-Sleeve Running </span>
+                                    <span class="price">3500 KSH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <img src="images/common/esport-champ-store-3.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's T-Shirt </span>
+                                    <span class="price">2500 KSH</span>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <img src="images/common/esport-champ-store-4.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's Long-Sleeve Running </span>
+                                    <span class="price">2000 KSH</span>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hotdeals" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <span class="store-badge hot">hot</span>
+                                    <img src="images/common/esport-champ-store-3.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's T-Shirt Elite</span>
+                                    <span class="price">3500 KSH</span>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <span class="store-badge new">new</span>
+                                    <img src="images/common/esport-champ-store-2.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's Long-Sleeve Running </span>
+                                    <span class="price">3000 KSH</span>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <img src="images/common/esport-champ-store-4.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's T-Shirt </span>
+                                    <span class="price">3000 KSH</span>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <img src="images/common/esport-champ-store-1.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's Long-Sleeve Running </span>
+                                    <span class="price">3000 KSH</span>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="officialapparel" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <span class="store-badge hot">hot</span>
+                                    <img src="images/common/esport-champ-store-1.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's T-Shirt Elite</span>
+                                    <span class="price">3000 KSH</span>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <span class="store-badge new">new</span>
+                                    <img src="images/common/esport-champ-store-2.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's Long-Sleeve Running </span>
+                                    <span class="price">3000 KSH</span>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <img src="images/common/esport-champ-store-3.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's T-Shirt </span>
+                                    <span class="price">3400 KSH</span>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="esport-store-list-item">
+                            <div>
+                                <a href="#">
+                                    <img src="images/common/esport-champ-store-4.jpg" alt="product-image">
+                                </a>
+                                <div class="info">
+                                    <span class="name">Men's Long-Sleeve Running </span>
+                                    <span class="price">3400 KSH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ESPORT CHAMPIONSHIP STORE BEGIN-->
+    
+    </div>
+        
+    <!--SPORT CHAMPIONSHIP CONTACT BEGIN-->
+<div id="contact" class="esport-championship-contact">
+    <div class="wrapper-img">
+        <img src="images/common/esport-champ-contact-background.jpg" alt="esport-champ-contact-background">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="information-wrap-left">
+                    <div>
+                        <span class="header-first">I'll see you at </span>
+                        <span class="header-red">grand final</span>
+                    </div>
+                    <span>
+                        <span>UPCOMING TORNAMENT </span>
+                        <span>28 - 30 July 2025</span>
+                    </span>
+                    <a href="#">
+                        get tickets
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="information-wrap">
+                    <div>
+                        <span class="header-welcom">Welcom to</span>
+                        <span class="header-arena">U45 GAMES</span>
+                    </div>
+                    <span>
+                        <span>GET INVOLVED AND ENGAGE FOR AN AMAIZING AND GREAT MOMENTS.  </span>
+                    </span>
+                    <a href="#">
+                        get directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--SPORT CHAMPIONSHIP CONTACT END-->
+    
+    <div class="esport-championship-footer-links">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    <li class="facebook">
+                        <a href="#">
+                            <span>facebook</span>
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="twitter">
+                        <a href="#">
+                            <span>twitter</span>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="google">
+                        <a href="#">
+                            <span>google+</span>
+                            <i class="fa fa-google" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="instagram">
+                        <a href="#">
+                            <span>instagram</span>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="youtube">
+                        <a href="#">
+                            <span>youtube</span>
+                            <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <script type="text/javascript" src="js/library/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/library/jquery-ui.js"></script>
+<script type="text/javascript" src="js/library/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/library/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/library/jcarousel.connected-carousels.js"></script>
+<script type="text/javascript" src="js/library/owl.carousel.js"></script>
+<script type="text/javascript" src="js/library/progressbar.js"></script>
+<script type="text/javascript" src="js/library/jquery.bracket.min.js"></script>
+<script type="text/javascript" src="js/library/chartist.js"></script>
+<script type="text/javascript" src="js/library/Chart.js"></script>
+<script type="text/javascript" src="js/library/fancySelect.js"></script>
+<script type="text/javascript" src="js/library/isotope.pkgd.js"></script>
+<script type="text/javascript" src="js/library/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="js/library/chartist-plugin-legend.js"></script>
+    <script type="text/javascript" src="js/library/chartist-plugin-threshold.js"></script>
+    <script type="text/javascript" src="js/library/chartist-plugin-pointlabels.js"></script>
+
+    <!-- Custom Scripts -->
+<script type="text/javascript" src="js/jquery.team-coundown.js"></script>
+<script type="text/javascript" src="js/matches-slider.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/matches_broadcast_listing.js"></script>
+<script type="text/javascript" src="js/news-line.js"></script>
+<script type="text/javascript" src="js/match_galery.js"></script>
+<script type="text/javascript" src="js/main-club-gallery.js"></script>
+<script type="text/javascript" src="js/product-slider.js"></script>
+<script type="text/javascript" src="js/circle-bar.js"></script>
+<script type="text/javascript" src="js/standings.js"></script>
+<script type="text/javascript" src="js/shop-price-filter.js"></script>
+<script type="text/javascript" src="js/timeseries.js"></script>
+<script type="text/javascript" src="js/radar.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/preloader.js"></script>
+<script type="text/javascript" src="js/diagram.js"></script>
+<script type="text/javascript" src="js/bi-polar-diagram.js"></script>
+<script type="text/javascript" src="js/label-placement-diagram.js"></script>
+<script type="text/javascript" src="js/donut-chart.js"></script>
+<script type="text/javascript" src="js/animate-donut.js"></script>
+<script type="text/javascript" src="js/advanced-smil.js"></script>
+<script type="text/javascript" src="js/svg-path.js"></script>
+<script type="text/javascript" src="js/pick-circle.js"></script>
+<script type="text/javascript" src="js/horizontal-bar.js"></script>
+<script type="text/javascript" src="js/gauge-chart.js"></script>
+<script type="text/javascript" src="js/stacked-bar.js"></script>
+<script type="text/javascript" src="js/treshold.js"></script>
+<script type="text/javascript" src="js/visible.js"></script>
+<script type="text/javascript" src="js/landing_carousel.js"></script>
+<script type="text/javascript" src="js/landing_sport_standings.js"></script>
+<script type="text/javascript" src="js/twitterslider.js"></script>
+<script type="text/javascript" src="js/champions.js"></script>
+<script type="text/javascript" src="js/landing_mainnews_slider.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/video_slider.js"></script>
+<script type="text/javascript" src="js/footer_slides.js"></script>
+<script type="text/javascript" src="js/player_test.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="dev-assets/demo-switcher.js"></script>
+
+    <!-- Supabase and Custom Scripts -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script>
+        // Supabase initialization
+        const supabaseUrl = 'https://mfhdxbynauxatkcmexov.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1maGR4YnluYXV4YXRrY21leG92Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM5NzQ2MDgsImV4cCI6MjA1OTU1MDYwOH0.5JZZX_8PPksF-PoyCP8OC_eaWTcIsIYMx1dLIx2-piY';
+        const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+        // Initialize smooth scrolling after DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            const anchors = document.querySelectorAll('a[href^="#"]');
+            anchors.forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    // Check for valid href
+                    if (!href || href === '#') {
+                        e.preventDefault();
+                        return;
+                    }
+                    
+                    // Find target element
+                    const target = document.querySelector(href);
+                    if (!target) {
+                        console.warn('Smooth scroll: Target element not found for ' + href);
+                        return;
+                    }
+                    
+                    e.preventDefault();
+                    
+                    try {
+                        const headerOffset = 100;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    } catch (error) {
+                        console.error('Smooth scroll error:', error);
+                        // Fallback to default behavior if smooth scroll fails
+                        window.location.hash = href;
+                    }
+                });
+            });
+        });
+
+        // Owl Carousel initialization
+        $(document).ready(function(){
+            if (typeof $.fn.owlCarousel !== 'undefined') {
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    items: 1
+                });
+            }
+        });
+    </script>
+
+    <script>
+        // Initialize Bootstrap components
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all Bootstrap components
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+
+            // Initialize all collapse elements
+            var collapseElements = document.querySelectorAll('.navbar-collapse');
+            collapseElements.forEach(function(element) {
+                new bootstrap.Collapse(element, {
+                    toggle: false
+                });
+            });
+
+            // Initialize all modals
+            var modals = document.querySelectorAll('.modal');
+            modals.forEach(function(modal) {
+                new bootstrap.Modal(modal, {
+                    backdrop: 'static',
+                    keyboard: false
+                });
+            });
+
+            // Handle navbar toggle clicks
+            document.querySelectorAll('.navbar-toggle').forEach(function(toggle) {
+                toggle.addEventListener('click', function() {
+                    var target = this.getAttribute('data-bs-target');
+                    var collapse = bootstrap.Collapse.getInstance(document.querySelector(target));
+                    if (collapse) {
+                        collapse.toggle();
+                    }
+                });
+            });
+
+            // Handle tab clicks
+            document.querySelectorAll('[data-bs-toggle="tab"]').forEach(function(tab) {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = this.getAttribute('data-bs-target');
+                    var tabPane = document.querySelector(target);
+                    if (tabPane) {
+                        // Remove active class from all tabs and panes
+                        document.querySelectorAll('.nav-tabs .nav-link').forEach(function(t) {
+                            t.classList.remove('active');
+                        });
+                        document.querySelectorAll('.tab-pane').forEach(function(p) {
+                            p.classList.remove('active', 'show');
+                        });
+                        
+                        // Add active class to clicked tab and pane
+                        this.classList.add('active');
+                        tabPane.classList.add('active', 'show');
+                    }
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                var navbar = document.querySelector('.navbar-collapse');
+                var toggle = document.querySelector('.navbar-toggle');
+                if (navbar && toggle && !navbar.contains(event.target) && !toggle.contains(event.target)) {
+                    var collapse = bootstrap.Collapse.getInstance(navbar);
+                    if (collapse) {
+                        collapse.hide();
+                    }
+                }
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                var navbar = document.querySelector('.navbar-collapse');
+                var collapse = bootstrap.Collapse.getInstance(navbar);
+                if (window.innerWidth >= 768 && collapse) {
+                    collapse.hide();
+                }
+            });
+        });
+    </script>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const registerBtn = document.querySelector('.register-btn');
+  const registerModal = document.getElementById('registerModal');
+  
+  if (registerBtn && registerModal) {
+    registerBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const modal = new bootstrap.Modal(registerModal);
+      modal.show();
+    });
+  }
+});
+</script>
+
+    <script>
+        // Initialize register modal
+        document.addEventListener('DOMContentLoaded', function() {
+            const registerBtn = document.querySelector('.register-btn');
+            const registerModal = document.getElementById('registerModal');
+            
+            if (registerBtn && registerModal) {
+                // Initialize the modal
+                const modal = new bootstrap.Modal(registerModal, {
+                    backdrop: 'static',
+                    keyboard: false
+                });
+                
+                // Add click handler to the register button
+                registerBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    modal.show();
+                });
+            }
+        });
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/store.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/store.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/checkout.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/checkout.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/esport-championship-landing.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/esport-championship-landing.html"
+        }
+    ]
+}
