@@ -350,6 +350,21 @@
                 </tbody>
             </table>
         </div>
+
+        <div class="admin-card">
+            <h2>Newsletter Subscriptions</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Email Address</th>
+                        <th>Subscribed At</th>
+                    </tr>
+                </thead>
+                <tbody id="newsletterTableBody">
+                    <!-- Emails will be loaded here -->
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
@@ -530,6 +545,42 @@
             }
         }
 
+        // Load Newsletter Subscriptions
+        async function loadNewsletterSubscriptions() {
+            try {
+                console.log('Loading newsletter subscriptions...');
+                const { data: subscriptions, error } = await supabaseClient
+                    .from('newsletter_subscriptions')
+                    .select('email, created_at') // Select email and subscription time
+                    .order('created_at', { ascending: false }); // Order by most recent
+
+                if (error) throw error;
+                console.log('Newsletter subscriptions loaded:', subscriptions);
+
+                const tbody = document.getElementById('newsletterTableBody');
+                tbody.innerHTML = ''; // Clear existing rows
+
+                if (!subscriptions || subscriptions.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="2" style="text-align: center;">No newsletter subscribers found</td></tr>';
+                    return;
+                }
+
+                subscriptions.forEach(sub => {
+                    const row = document.createElement('tr');
+                    const subscribedAt = sub.created_at ? new Date(sub.created_at).toLocaleString() : 'N/A';
+                    row.innerHTML = `
+                        <td data-label="Email Address">${sub.email || 'N/A'}</td>
+                        <td data-label="Subscribed At">${subscribedAt}</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error loading newsletter subscriptions:', error);
+                const tbody = document.getElementById('newsletterTableBody');
+                tbody.innerHTML = '<tr><td colspan="2" style="text-align: center;">Error loading subscriptions: ' + error.message + '</td></tr>';
+            }
+        }
+
         // Initialize admin panel
         async function initAdminPanel() {
             try {
@@ -538,6 +589,7 @@
                 await loadTeams();
                 await loadPlayers();
                 await loadMatches();
+                await loadNewsletterSubscriptions(); // Add call to load newsletter data
                 console.log('Admin panel initialized successfully');
             } catch (error) {
                 console.error('Error initializing admin panel:', error);

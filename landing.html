@@ -1916,11 +1916,12 @@
             </div>
             <div class="col-md-12">
                 <div class="esport-championship-subscribe">   
-    <form>
-        <input type="text" name="text" placeholder="Type your e-mail here">
-        <button>subscribe</button>
-    </form>
-</div> 
+                    <form id="newsletterForm">
+                        <input type="email" name="email" id="newsletterEmail" placeholder="Type your e-mail here" required>
+                        <button type="submit">subscribe</button>
+                    </form>
+                    <p id="newsletterMessage" style="color: #ffd700; margin-top: 10px;"></p> 
+                </div> 
             </div>
         </div>
     </div>    
@@ -2445,6 +2446,55 @@ document.addEventListener('DOMContentLoaded', function() {
                 registerBtn.addEventListener('click', function(e) {
                     e.preventDefault();
                     modal.show();
+                });
+            }
+        });
+    </script>
+
+    <script>
+        // Newsletter Subscription Handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsletterForm = document.getElementById('newsletterForm');
+            const newsletterEmailInput = document.getElementById('newsletterEmail');
+            const newsletterMessage = document.getElementById('newsletterMessage');
+
+            if (newsletterForm && newsletterEmailInput && newsletterMessage) {
+                newsletterForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    const email = newsletterEmailInput.value.trim();
+                    newsletterMessage.textContent = ''; // Clear previous messages
+
+                    if (!email) {
+                        newsletterMessage.textContent = 'Please enter a valid email address.';
+                        newsletterMessage.style.color = '#ff6b6b'; // Red for error
+                        return;
+                    }
+
+                    try {
+                        const { data, error } = await supabase
+                            .from('newsletter_subscriptions') // Make sure 'newsletter_subscriptions' table exists with an 'email' column
+                            .insert([{ email: email }]);
+
+                        if (error) {
+                            console.error('Supabase insert error:', error);
+                            // Check for unique constraint violation (already subscribed)
+                            if (error.code === '23505') { 
+                                newsletterMessage.textContent = 'You are already subscribed!';
+                                newsletterMessage.style.color = '#ffd700'; // Gold for info
+                            } else {
+                                newsletterMessage.textContent = 'Subscription failed. Please try again.';
+                                newsletterMessage.style.color = '#ff6b6b'; // Red for error
+                            }
+                        } else {
+                            newsletterMessage.textContent = 'Successfully subscribed!';
+                            newsletterMessage.style.color = '#51cf66'; // Green for success
+                            newsletterEmailInput.value = ''; // Clear the input field
+                        }
+                    } catch (err) {
+                        console.error('Error subscribing:', err);
+                        newsletterMessage.textContent = 'An unexpected error occurred. Please try again.';
+                        newsletterMessage.style.color = '#ff6b6b'; // Red for error
+                    }
                 });
             }
         });
